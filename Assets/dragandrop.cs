@@ -24,7 +24,7 @@ public class draganddrop : MonoBehaviour
     {
         Vector3 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition - mousePosition);
 
-        -
+        
         targetPosition.x = Mathf.Clamp(targetPosition.x, minBoundary.x, maxBoundary.x);
         targetPosition.y = Mathf.Clamp(targetPosition.y, minBoundary.y, maxBoundary.y);
         targetPosition.z = Mathf.Clamp(targetPosition.z, minBoundary.z, maxBoundary.z);
