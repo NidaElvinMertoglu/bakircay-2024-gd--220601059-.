@@ -32,6 +32,14 @@ The project is organized into the following directories:
 ## Video of the gameplay:
 
 
+
+https://github.com/user-attachments/assets/5d60e26e-09b4-43b1-9dd3-814b23c832df
+
+
+
+
+
+
 ## License
 This project is provided for educational purposes. Feel free to modify and use it as needed.
 
