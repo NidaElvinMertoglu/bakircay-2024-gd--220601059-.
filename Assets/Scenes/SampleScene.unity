@@ -270,7 +270,9 @@ GameObject:
   - component: {fileID: 341931402}
   - component: {fileID: 341931401}
   - component: {fileID: 341931400}
-  - component: {fileID: 341931399}
+  - component: {fileID: 341931403}
+  - component: {fileID: 341931404}
+  - component: {fileID: 341931405}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -278,29 +280,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!136 &341931399
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341931398}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!23 &341931400
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -366,6 +345,69 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &341931403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341931398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c77403b2d3acb694b862f0aa96fc23cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedObject: {fileID: 0}
+  launchForce: 10
+  launchDirection: {fileID: 0}
+--- !u!65 &341931404
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341931398}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000002, y: 6.2756705, z: 1.0000002}
+  m_Center: {x: 0.00000007947286, y: 2.137835, z: -0.00000007947286}
+--- !u!54 &341931405
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341931398}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,6 +1404,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7637091310903104568, guid: 92ea791347fa83944bdf4e0477bf8fda,
+        type: 3}
+      propertyPath: m_TagString
+      value: nesne
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1388,10 +1435,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tomato (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7091930136997433403, guid: d1c80426d6d87224f8ddfeab0bf3f783,
+        type: 3}
+      propertyPath: m_TagString
+      value: nesne
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575134073370102401, guid: d1c80426d6d87224f8ddfeab0bf3f783,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575134073370102401, guid: d1c80426d6d87224f8ddfeab0bf3f783,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7575134073370102401, guid: d1c80426d6d87224f8ddfeab0bf3f783,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7575134073370102401, guid: d1c80426d6d87224f8ddfeab0bf3f783,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.81
+      value: -1.46
       objectReference: {fileID: 0}
     - target: {fileID: 7575134073370102401, guid: d1c80426d6d87224f8ddfeab0bf3f783,
         type: 3}
@@ -1514,6 +1581,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple
       objectReference: {fileID: 0}
+    - target: {fileID: 6447707296416093582, guid: 47ad140b38e8a584f96622cd58fb63f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: nesne
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1535,6 +1607,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6986085039202213439, guid: 8997c483eca668340be35693a7c7dde8,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986085039202213439, guid: 8997c483eca668340be35693a7c7dde8,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986085039202213439, guid: 8997c483eca668340be35693a7c7dde8,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6
+      objectReference: {fileID: 0}
     - target: {fileID: 6986085039202213439, guid: 8997c483eca668340be35693a7c7dde8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1589,6 +1676,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tomato
+      objectReference: {fileID: 0}
+    - target: {fileID: 7762059480134698117, guid: 8997c483eca668340be35693a7c7dde8,
+        type: 3}
+      propertyPath: m_TagString
+      value: nesne
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
