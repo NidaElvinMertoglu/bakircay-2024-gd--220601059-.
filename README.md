@@ -10,10 +10,9 @@
 - **Yeniden Spawn:** Bütün nesneler eşleştirildiğinde, yeni nesneler sahneye eklenir ve oyun devam eder.
 
 ## Yetenekler
-1. **Easy Match (Kolay Eşleşme):** Easy Match yeteneği ile oyuncular, rastgele seçilen bir çift nesneyi kolayca eşleştirebilirler. Bu yetenek alanda bir nesne varsa kullanılmaz.
-2. **Reset (Sıfırlama):** Reset tuşu ile oyuncular, oyunu sıfırlayabilir, puanı sıfırlayabilir ve nesneleri yeniden getirebilirler.
+1. **Easy Match (Kolay Eşleşme):** Easy Match yeteneği ile oyuncular, rastgele seçilen bir çift nesneyi kolayca eşleştirebilirler. Bu yetenek alanda bir nesne varsa kullanılmaz. Bu yetenek oyunda ilk eşleştirme yapıldıktan sonra kullanılabilir.
+2. **Mix (Karıştır):** Mix tuşu ile oyuncular, sahnedeki nesnelerin yerlerini rastgele karıştırabilirler, bu da oyuna sürpriz bir hava katar.
 3. **Double It (İkiye Katla):** Double It yeteneği aktif olduğunda, oyuncular sahnede yapacakları eşleşmelerin puanını iki katına çıkarır. Bu etki, tüm nesneler eşleşene kadar devam eder.
-4. **Mix (Karıştır):** Mix tuşu ile oyuncular, sahnedeki nesnelerin yerlerini rastgele karıştırabilirler, bu da oyuna sürpriz bir hava katar.
 
 ## Oyun Mekanikleri
 - **Nesneleri Eşleştirme:** Oyuncu, nesneleri doğru şekilde alana yerleştirerek puan kazanır.
